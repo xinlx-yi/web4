@@ -1,0 +1,65 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  }
+
+.bg{
+  background-image: url("background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  height: 100%;
+}
+
+div.first{
+  text-align: center;
+}
+
+
+
+
+.title{
+
+  font-size:72px;
+  background-color: aliceblue;
+}
+.name{
+  font-size: 20px;  
+  color: #000000;
+  border-style:inset;
+  border-width: medium;
+  border-color: hsl(208, 77%, 47%);
+  text-decoration: none;  
+  background-color: rgb(228, 159, 90);
+}
+.table1{
+  text-align: center;
+  background-color: blue;
+  margin: auto;
+  border: 1px solid;
+  width: 60%;
+}
+div.content {
+  position: relative;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  margin: 10px auto ;
+  max-width: 900px;
+}
+.button {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  margin: 0px 0px;
+  cursor: pointer;
+}
+
+.btn1 {
+  background-color: #0cc984;
+} 
