@@ -50,6 +50,15 @@ div.first{
   margin: 10px auto ;
   max-width: 900px;
 }
+h1{
+  size: 75px;
+}
+h2{
+  size: 42px;
+}
+h4{
+  size: 35px;
+}
 .button {
   border: none;
   padding: 15px 30px;
