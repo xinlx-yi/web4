@@ -1,8 +1,7 @@
 body, html {
   height: 100%;
   margin: 0;
-  }
-
+}
 .bg{
   background-image: url("background.jpg");
   height: 100%;
@@ -10,19 +9,12 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
   height: 100%;
 }
-
 div.first{
   text-align: center;
 }
-
-
-
-
 .title{
-
   font-size:72px;
   background-color: aliceblue;
 }
@@ -35,6 +27,9 @@ div.first{
   text-decoration: none;  
   background-color: rgb(228, 159, 90);
 }
+.word{
+  font-size: 35px;
+}
 .table1{
   text-align: center;
   background-color: blue;
@@ -42,7 +37,7 @@ div.first{
   border: 1px solid;
   width: 60%;
 }
-.layer{
+#layer{
   position: relative;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -59,20 +54,15 @@ h2{
 h4{
   size: 35px;
 }
-.word{
-  size:35px;
-}
-.myurl{
 
+.myurl{
   text-decoration: none;
   color: black;
-
-
 }
 .myurl:hover{
   width: 100%;
   color: #008FFF;
-  font-size: 45px;
+  font-size: 50px;
 }
 .button {
   border: none;
