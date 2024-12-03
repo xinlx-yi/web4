@@ -27,6 +27,10 @@ div.first{
   text-decoration: none;  
   background-color: rgb(228, 159, 90);
 }
+.ipt{
+  color:red;
+  font-size: 25px;
+}
 .word{
   font-size: 35px;
 }
@@ -64,10 +68,7 @@ h4{
   color: #008FFF;
   font-size: 50px;
 }
-.ipt{
-  color:red;
-  font-size: 25px;
-}
+
 .button {
   border: none;
   padding: 15px 30px;
