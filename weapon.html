@@ -8,15 +8,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="pro.css">
     </head>
-    <body>
+    <body class="weaponbg">
         <div class="tb">
-        <table class="table3">
-        <tr>
-            <td><button class="button" type="button" onclick="location.href='index.html'">首頁</button></td>
-            <td><button class="button" type="button" onclick="location.href='product.html'">歷代作品</button></td>
-            <td><button class="button" type="button" onclick="location.href='backstory.html'">背景故事</button></td>
-            <td><button class="button" type="button" onclick="location.href='dragon.html'">龍種</button></td>
-            <td><button class="button " type="button" onclick="location.href='ending.html'">結尾</button></td>
-        </tr>
-        </table>
+            <table class="table3">
+            <tr>
+                <td><button class="button" type="button" onclick="location.href='index.html'">首頁</button></td>
+                <td><button class="button" type="button" onclick="location.href='product.html'">歷代作品</button></td>
+                <td><button class="button" type="button" onclick="location.href='backstory.html'">背景故事</button></td>
+                <td><button class="button" type="button" onclick="location.href='dragon.html'">龍種</button></td>
+                <td><button class="button " type="button" onclick="location.href='ending.html'">結尾</button></td>
+            </tr>
+            </table>
         </div>
+        <div class="weapon-tbe">
+            <div class="grid">
+                <img src="大劍.png" alt="大劍" onclick="showWeaponInfo('大劍')">
+                <img src="太刀.png" alt="太刀" onclick="showWeaponInfo('太刀')">
+                <img src="單手劍.png" alt="單手劍" onclick="showWeaponInfo('單手劍')">
+                <img src="雙劍.png" alt="雙劍" onclick="showWeaponInfo('雙劍')">
+                <img src="大錘.png" alt="大錘" onclick="showWeaponInfo('大錘')">
+                <img src="狩獵笛.png" alt="狩獵笛" onclick="showWeaponInfo('狩獵笛')">
+                <img src="長槍.png" alt="長槍" onclick="showWeaponInfo('長槍')">
+                <img src="銃槍.png" alt="銃槍" onclick="showWeaponInfo('銃槍')">
+                <img src="斬擊斧.png" alt="斬擊斧" onclick="showWeaponInfo('斬擊斧')">
+                <img src="充能斧.png" alt="充能斧" onclick="showWeaponInfo('充能斧')">
+                <img src="操蟲棍.png" alt="操蟲棍" onclick="showWeaponInfo('操蟲棍')">
+                <img src="弓.png" alt="弓" onclick="showWeaponInfo('弓')">
+                <img src="輕弩.png" alt="輕弩" onclick="showWeaponInfo('輕弩')">
+                <img src="重弩.png" alt="重弩" onclick="showWeaponInfo('重弩')">
+            </div>
+            <div class="info">
+                <p id="descriptions">請點選左邊武器</p>
+            </div>
+        </div>
+
+        <script>
+            function showWeaponInfo(weapon) {
+                console.log('點擊了武器：' + weapon); // 測試用
+                const descriptions = {
+                    '大劍': '大劍是一把重型武器，以強大的破壞力著稱。適合喜歡高傷害的獵人使用。',
+                    '太刀': '太刀是一種優雅的武器，可以積累氣刃值進行居合斬。適合喜歡華麗連擊的獵人。',
+                    '單手劍': '單手劍配備盾牌，是最均衡的武器。適合新手入門。',
+                    '雙劍': '雙劍以快速連續攻擊為特色，可以進入鬼人化狀態。',
+                    '大錘': '大錘可以給予魔物強力的打擊，特別適合打擊頭部。',
+                    '狩獵笛': '狩獵笛不只能攻擊，還能演奏旋律來強化隊友。',
+                    '長槍': '長槍擁有優秀的防禦能力和反擊能力，適合持久戰。',
+                    '銃槍': '銃槍可以進行遠近距離攻擊，是全能型武器。',
+                    '斬擊斧': '斬擊斧可以在斧模式和劍模式之間切換，非常靈活。',
+                    '充能斧': '充能斧需要蓄力才能發揮最大威力，傷害很高。',
+                    '操蟲棍': '操蟲棍可以在空中自由移動，機動性最強。',
+                    '弓': '弓是遠距離攻擊的最佳選擇，可以使用各種塗層。',
+                    '輕弩': '輕弩機動性高，可以在移動中射擊，能夠使用各種特殊彈藥進行支援。',
+                    '重弩': '重弩威力強大，可以裝備盾牌，特殊彈藥的威力比輕弩更強。'
+                };
+                document.getElementById('descriptions').textContent = descriptions[weapon];
+            }
+        </script>
+    </body>
+</html>
