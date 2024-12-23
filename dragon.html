@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="pro.css">
     </head>
-    <body>
+    <body class="dragonbg">
         <div class="tb">
         <table class="table3">
         <tr>
@@ -22,50 +22,52 @@
         
         </div>
 
-        <div class="dragon-container">
-            <div class="dragon-section">
-                <h2 class="section-title">世界版魔物</h2>
-                <div class="grid">
-                    <img src="滅盡龍.png" alt="滅盡龍" onclick="showDragonInfo('滅盡龍', 'world')">
-                    <img src="鋼龍.png" alt="鋼龍" onclick="showDragonInfo('鋼龍', 'world')">
-                    <img src="炎王龍.png" alt="炎王龍" onclick="showDragonInfo('炎王龍', 'world')">
+        <div class="container">
+            <div class="section">
+                <div>
+                    <h2 class="worldmonster">世界版魔物</h2>
+                    <div class="grid">
+                        <img src="滅盡龍.png" alt="滅盡龍" onclick="showDragonInfo('滅盡龍', 'world')">
+                        <img src="鋼龍.png" alt="鋼龍" onclick="showDragonInfo('鋼龍', 'world')">
+                        <img src="炎王龍.png" alt="炎王龍" onclick="showDragonInfo('炎王龍', 'world')">
+                    </div>
                 </div>
                 <div class="info">
-                    <p id="world-descriptions">請點選左側魔物</p>
+                    <p id="world-drs">請點選上方古龍</p>
                 </div>
             </div>
-            <div class="dragon-section">
-                <h2 class="section-title">冰原版魔物</h2>
-                <div class="grid">
-                    <img src="冰咒龍.png" alt="冰咒龍" onclick="showDragonInfo('冰咒龍', 'iceborne')">
-                    <img src="雷狼龍.png" alt="雷狼龍" onclick="showDragonInfo('雷狼龍', 'iceborne')">
-                    <img src="黑龍.png" alt="黑龍" onclick="showDragonInfo('黑龍', 'iceborne')">
+            
+            <div class="section">
+                <div>
+                    <h2 class="icebornemonster">冰原版古龍</h2>
+                    <div class="grid">
+                        <img src="冰咒龍.png" alt="冰咒龍" onclick="showDragonInfo('冰咒龍', 'iceborne')">
+                        <img src="雷狼龍.png" alt="雷狼龍" onclick="showDragonInfo('雷狼龍', 'iceborne')">
+                        <img src="黑龍.png" alt="黑龍" onclick="showDragonInfo('黑龍', 'iceborne')">
+                    </div>
                 </div>
                 <div class="info">
-                    <p id="iceborne-descriptions">請點選左側魔物</p>
+                    <p id="iceborne-drs">請點選上方古龍</p>
                 </div>
             </div>
         </div>
-
+        
         <script>
             function showDragonInfo(dragon, version) {
-                const worldDescriptions = {
-                    '滅盡龍': '作為古龍中的頂點，能夠吸收生物能量的強大古龍，被稱為「滅盡的終焉龍」。',
-                    '鋼龍': '全身覆蓋著堅硬金屬鱗片的古龍，能夠操縱風壓進行攻擊。',
-                    '炎王龍': '統領火山地帶的霸主，全身纏繞著烈焰的強大古龍。'
+                const descriptions = {
+                    '滅盡龍': '滅盡龍是最古老的龍之一，擁有毀滅性的能量。',
+                    '鋼龍': '全身覆蓋著堅硬金屬的飛龍，能夠噴射高壓水流。',
+                    '炎王龍': '支配著古代森林的霸主，能夠自由操縱火焰。',
+                    '冰咒龍': '棲息於冰原的神秘古龍，能夠操控寒氣。',
+                    '雷狼龍': '兇猛的雷狼龍，全身充滿著雷電的力量。',
+                    '黑龍': '傳說中的黑龍，擁有毀滅世界的力量。'
                 };
-
-                const iceborneDescriptions = {
-                    '冰咒龍': '棲息於冰原地帶的古龍，能夠噴射極寒的冰霧凍結獵物。',
-                    '雷狼龍': '支配著雷電的兇暴龍種，性情極其兇猛。',
-                    '黑龍': '傳說中的古龍，擁有毀滅性的力量，被稱為「災禍的象徵」。'
-                };
-                if (version === 'world') {
-                    document.getElementById('world-descriptions').textContent = worldDescriptions[dragon];
-                } else {
-                    document.getElementById('iceborne-descriptions').textContent = iceborneDescriptions[dragon];
-                }
+                
+                const elementId = version === 'world' ? 'world-drs' : 'iceborne-drs';
+                document.getElementById(elementId).textContent = descriptions[dragon];
             }
         </script>
+
+        
     </body>
 </html>
