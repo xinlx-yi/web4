@@ -103,8 +103,7 @@ h2{
 .logo img {
   width: 200px;
   height: 100px;
-  
-  }
+}
 
 .layer p{
   font-size: 30px;
@@ -114,23 +113,9 @@ h2{
   font-size: 50px;
 }
 
-.tb1 {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 5px;
-}
-
-
-
-
-
 .tb{
   background-color:#d8e8ff ;
 }
-
 .table3 {
   text-align: center;
   margin: auto;
