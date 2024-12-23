@@ -2,6 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
 }
+
 .bg{
   background-image: url("background.jpg");
   height: 100%;
@@ -11,13 +12,16 @@ body, html {
   background-attachment: fixed;
   height: 100%;
 }
+
 div.first{
   text-align: center;
 }
+
 .title{
   font-size:72px;
   background-color: aliceblue;
 }
+
 .name{
   font-size: 20px;  
   color: #000000;
@@ -27,20 +31,16 @@ div.first{
   text-decoration: none;  
   background-color: rgb(228, 159, 90);
 }
+
 .ipt{
   color:red;
   font-size: 25px;
 }
+
 .word{
   font-size: 35px;
 }
-.table1{
-  text-align: center;
-  background-color: blue;
-  margin: auto;
-  border: 1px solid;
-  width: 60%;
-}
+
 .layer{
   position: relative;
   padding: 20px;
@@ -49,9 +49,11 @@ div.first{
   margin: 10px auto ;
   max-width: 900px;
 }
+
 h1{
   size: 75px;
 }
+
 h2{
   size: 42px;
 }
@@ -63,21 +65,77 @@ h2{
   text-decoration: none;
   color: black;
 }
+
 .myurl:hover{
   width: 100%;
   color: #008FFF;
   font-size: 50px;
 }
+.fstbg{
+  background-image: url(mhwibg.png);
+  height:100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  bckground-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.logo img {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+.logo img {
+  width: 200px;
+  height: 100px;
+  
+  }
+
+.layer p{
+  font-size: 30px;
+}
+.imp{
+  color:red;
+  font-size: 50px;
+}
+
+.tb1 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+}
 
 
 
 
-.table2{
+
+.tb{
+  background-color:#d8e8ff ;
+}
+
+.table3 {
   text-align: center;
-  background-color: blue;
   margin: auto;
-  border: 1px solid;
-  width: 60%;
+  width: 70%;
+  padding: 15px;
 }
 .button {
   border: none;
@@ -87,22 +145,27 @@ h2{
   font-size: 25px;
   margin: 0px 0px;
   cursor: pointer;
-}
-
-.btn1 {
-  background-color: #0cc984;
+  border-radius: 8px;
+  color: #4a2900;
+  background-color: #b5d8fe;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 } 
 
+button:hover {
+  background-color: #8fc6ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
 
-
-
-
-
-
+button:active {
+  background-color: #67a9f3;  /* 更深的藍色 */
+  transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 .mhwibg{
   background-image: url("mhwibg.png");
-  height: 800px;
+  height: 1000px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -113,9 +176,10 @@ h2{
   background-size: cover;
   background-attachment: fixed;
 }
+
 .mhrsbg{
   background-image: url("mhrsbg.png");
-  height: 800px;
+  height: 1000px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -131,9 +195,10 @@ h2{
   margin: auto;
   position: relative;
   width: 1200px;
-  height: 600px;
+  height: 800px;
   overflow: hidden;
 }
+
 .mh img {
   width: 100%;
   height: 100%;
@@ -178,4 +243,8 @@ h2{
   margin: 0;
   text-align: center;
   max-width: 1000px;
+}
+
+.r{
+  color: #b5250c;
 }
