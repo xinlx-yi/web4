@@ -71,6 +71,40 @@ h2{
   color: #008FFF;
   font-size: 50px;
 }
+
+.prodiv {
+  position: fixed;
+  z-index: 98;
+  top: 200px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: linear-gradient(to bottom, #8B0000 5%, #000000 100%);
+  border-radius: 50%;
+  border: 7px solid;
+  cursor: cell;
+  color: white;
+  font-family: 標楷體;
+  font-size: 40px;
+  transition: 2s;
+  opacity: 0;
+}
+.circle{
+  position: fixed;
+  z-index: 99;
+  top: 200px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 7px solid;
+  border-color: red white white white;
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  to { transform: rotate(365deg); }
+}
 .fstbg{
   background-image: url(mhwibg.png);
   height:100%;
